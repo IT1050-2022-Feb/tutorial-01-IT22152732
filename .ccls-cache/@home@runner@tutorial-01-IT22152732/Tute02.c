@@ -25,13 +25,16 @@ int main() {
   printf("enter the distance : ");
   scanf("%d", &dis);
 
-  if (dis <= 30) {
+  if(dis <= 30)
+  {
     amount = dis * 50;
 
-  } else {
-    amount = (dis * 30) + (dis - 30) * 40;
   }
-  printf("amount = %.2f", amount);
-
+  else 
+  {
+    amount = (dis * 30) + (dis - 30)*40;
+  }
+  printf("amount = %.2f",amount);
+  
   return 0;
 }
